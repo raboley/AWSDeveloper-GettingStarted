@@ -6,9 +6,9 @@ const Topping = require('../models/topping'),
 const toppings = {};
 
 function initToppings (callback) {
-  createTopping('Dough Crust', 'dough_crust.png', 'dough_crust.png', 1);
-  createTopping('Marinara Sauce', 'marinara_sauce.png', 'marinara_sauce.png', 2);
-  createTopping('Mozzarella Cheese', 'mozzarella_cheese.png', 'mozzarella_cheese.png', 3);
+  createTopping('Dough Crust', 'dough_crust.png', 'dough_crust_big.png', 1);
+  createTopping('Marinara Sauce', 'marinara_sauce.png', 'marinara_sauce_big.png', 2);
+  createTopping('Mozzarella Cheese', 'mozzarella_cheese.png', 'mozzarella_cheese_big.png', 3);
   createTopping('Cheddar Cheese', 'cheddar.png', 'cheddar_cheese.png', 4);
   createTopping('Mushrooms', 'mushroom.png', 'mushrooms.png', 5);
   createTopping('Pepperoni', 'pepperoni.png', 'pepperonis.png', 6);

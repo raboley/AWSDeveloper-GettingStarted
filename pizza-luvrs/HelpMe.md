@@ -12,6 +12,8 @@ sudo yum install -y nodejs
 Ab -n 100 -c 5 http://pizza-loader-1127177182.us-west-2.elb.amazonaws.com/
 ```
 
+# Hooking up EC2 and S3
+
 ### Moving asset files to S3 Bucket using CLI one at a time
 ```
 aws s3 cp ./assets/js s3://pizza-luvers-russell-boley/js/ --recursive --exclude ".DS_Store"
@@ -25,6 +27,11 @@ aws s3 cp ./assets/css s3://pizza-luvers-russell-boley/css/ --recursive --exclud
 aws s3 cp ./assets/pizzas s3://pizza-luvers-russell-boley/pizzas/ --recursive --exclude ".DS_Store"
 ```
 
+### Changing the links to reference S3 from the static assets folder on the EC2/local folders
+This is the Root S3 path for my bucket that stores everything for pizza lovers.
+```
+//s3-us-west-2.amazonaws.com/pizza-luvers-russell-boley/
+```
 # Getting Website code from Local computer to EC2 image
 
 ### Removing Modules folder from project to make transfer of code quicker
